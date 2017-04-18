@@ -1,0 +1,101 @@
+FuncModule总纲领-20150810于Philips上海科技创新园区2号楼4楼
+每次当更新一次源代码的时候除了在其所属文件夹更新ReadMe记录信息外，还需要更新本文档的记录信息，
+这样的话每次查询需要的代码模块的时候就可以按照以下方式快速定位需要寻找的代码模块或者功能：
+
+
+=====================1.在本文档用Ctrl+F寻找关键字(单词，中文关键字)，定位该功能在哪个语言版本中存=================================================
+=====================2.根据1的结果到相应的文件夹中的ReadMe文件中用Ctrl+F寻找代码功能模块源码所属文件夹=================================================
+切记，要维护好本源码功能快速定位功能，需要每次更新完代码后都要实时更新该文本。
+
+
+
+****************************************C_Lang****************************************************
+
+标准记录格式：
+序号-日期：中英文关键字；
+
+1-20150810:Init
+****************************************CPlusPlus****************************************************
+
+//切记记录中不能出现CPlusPlus关键字
+1-20150810:Init
+2-20150829:增加了File>split.cpp>实现了字符串的spilit函数;关键字:split;字符串分割;
+3-20150829:增加了File>SearchTree.cpp>BST的Find函数;关键字:BST;二叉查找树;二叉树;Find;find;bst;
+4-20150829:增加了Directory>RecurTest>RecurTest.sln>简单例子解释递归函数调用的机制以及顺序;关键字:递归调用;堆栈;
+5-20150830:增加了File>SearchTree.cpp>二叉树的lowest common ancestor(LCA)的查找函数lowestCommonAncestor,深刻理解递归调用中局部变量和return语句层层返回的机制，大师级代码;关键字:BT;二叉树;Find;find;LCA;lowest commom ancestor;最小共同祖先;
+6-20150830:增加了Directory>LevelTraverseOfBT>LevelTraverseOfBT.sln>二叉树的层次遍历算法代码，分别采用了递归和队列实现;关键字:BT;二叉树;层次遍历;Level Traverse;level traverse;
+7-20150903:增加了File>BinaryTree.cpp>二叉树的最小、最大深度算法，采用递归实现;关键字:BT;二叉树;Minimum Depth of Binary Tree;Maximum Depth of Binary Tree;二叉树最小深度;二叉树最大深度;
+8-20150904:增加了File>RotateList.cpp>将List(链表)的后面K个节点提到当前List的最前端组成新的链表;关键字:List;链表;Rotate List;反转链表;翻转链表;
+9-20150904:增加了File>BinaryTreeRightSideView.cpp>使用层次遍历算法输出从右边往左看到的二叉树的结点值;关键字:二叉树;层次遍历;Binary Tree Right Side View;队列;leetcode.com/problems/binary-tree-right-side-view;
+10-20150905:增加了Directory>ListSorting>ListSorting.sln>使用冒泡排序和归并排序对单链表进行排序;关键字:单链表;list;List;冒泡排序;归并排序;Bubble Sorting;Merge Sorting;
+11-20150905:增加了File>Count_Primes.cpp>寻找小于n的数字中的质数;关键字:质数;prime number;Prime Number;
+12-20150905:增加了File>Arrange.cpp>计算没有相同值排在相邻位置的排列种类;关键字:Arrange;arrange;排列;全排列;
+13-20150905:增加了Directory>StringCombination>StringCombination.sln>输出字符串的所有组合;关键字:字符串;组合;字符串组合;string;combination;
+14-20150913:增加了File>Dec2Hex.cpp>将输入的10进制转换成对应的十六进制，如输入1000转换成0x1000;关键字:十进制转十六进制;十进制;十六进制;Dec;Hex;Dec2Hex;
+15-20150915:增加了File>NumberOfDigitOne.cpp>统计小于等于n的所有非负整数中数字1出现的次数;关键字:数字1的个数;Number of Digit One;小于等于n数字1的个数;
+16-20150916:增加了Directory>InputAStringLine>test1.sln>主要测试在控制台应用程序中如何输入一整行的字符串数据，这个在微软实习生招聘以及华为正式招聘机考的时候都出问题，切记，血的教训，主要功能是将输入的字符串的首字母变为大写，如果本来就是大写或者是数字，就保持不变;关键字:整行字符串的输入;包含空格的字符串输入;字符串单词首字符变大写;gets(char *variable);getline(cin,string variable);cin.getline(char *variable,strlen(variable) + 1);
+17-20150916:增加了Directory>MovingWay>MovingWay.sln>华为机考题，大意是输入一个n*n的矩形char字符，其中'B'表示起点，'H'表示终点，'-'表示该路可通,'#'表示该路不通，对于输入的矩形字符断从'B'到'H'是否存在路径,两点之间路径是否存在;;关键字:华为机考题;二维矩阵两点之间路径是否存在;路径;统计路径;判断路径是否存在;递归查找路径;遍历图;
+18-20150915:增加了Directory>CountMaxCharTimes>CountMaxCharTimes.sln>寻找输入的字符串中出现次数最多的字符以及出现的次数;关键字:统计字符出现个数;字符;统计字符;map;遍历map方位key,value;
+19-20150919:增加了Directory>UDPTest>udptest.dsw>UDP Win32网络通信代码，可发送数据和接收数据，端口配置在代码中;关键字:UDP;Win32网络编程;Network 
+20-20150926:增加了Directory>ACMCoder>ACMCoder.sln>(1)输入两点坐标（X1,Y1）,（X2,Y2）,计算并输出两点间的距离;(2)输入三个字符后，按各字符的ASCII码从小到大的顺序输出这三个字符;关键字:ACMcoder;计算两点间距离;fixed;setprecision;cout小数点位数;输入字符排序;冒泡排序;
+21-20151008:增加了Directory>MSOnlineTest>MSOnlineTest.sln>微软2016年校园招聘在线笔试题,本人得分80/400,共四个题，第一个题是求距离圆心距离最大的点，该点须位于圆内(包含圆上);第二个问题求一个整数集合内包含的Fibonacci数列的子集;其余两个题没做;关键字:微软;圆;Fibonacci;菲波拉契数列;
+22-20151009:增加了File>Course_CPP_Week2.cpp>Coursera北京大学C++学习Week2随堂练习题:简单的学生信息处理程序,学习如何正确的使用geline函数读取以某个分隔符分开的不同类型的一行数据;关键字:getline;输入;cin;分隔符;getline(cin,string变量,'分隔符');
+23-20151010:增加了File>Balanced_Binary_Tree.cpp>leetcode算法题，携程笔试题：判断一个棵二叉树是否是平衡二叉树;关键字:平衡二叉树;递归;Balanced Binary Tree;
+
+24-20151026:增加了File>Valid_Anagram.cpp>Given two strings s and t, write a function to determine if t is an anagram of s;判断一个字符串是不是另一个字符串的有效回文序列;关键字:Valid Anagram;回文序列;leecode;leetcode.com/problems/valid-anagram/;
+
+25-20151030:增加了File>cs2ca.cpp>CString转换为char类型的函数;关键字:CString;char;
+
+
+****************************************CSharp****************************************************
+
+
+1-20150810:Init
+
+
+
+
+
+
+
+
+****************************************Python****************************************************
+
+1-20150810:Init
+
+
+
+
+
+
+
+
+
+****************************************SQL****************************************************
+1-20150810:Init
+
+
+
+
+
+
+
+
+
+****************************************HTML_CSS****************************************************
+1-20150810:Init
+
+
+****************************************Matlab****************************************************
+1-20150810:
+
+****************************************Java****************************************************
+
+1-20150823:Init
+2-20150823:增加了Directory>Sorting>.project>常见排序算法;排序;冒泡排序;快速排序;归并排序;希尔排序;选择排序;插入排序;
+
+
+
+
+
+

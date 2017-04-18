@@ -1,0 +1,22 @@
+Project-CPlusPlus总纲领
+每添加一个功能模块代码，更新该文档。
+
+切记，要维护好本源码功能快速定位功能，需要每次更新完代码后都要实时更新该文本。
+
+
+****************************************CPlusPlus****************************************************
+
+标准记录格式：
+序号-日期：中英文关键字；
+
+
+1-20150810:Init
+
+
+
+
+2-20151113:增加了Directory>RFCard_Operate_WriteMissile>RFCard_Operate_WriteMissile.sln>（1）520Byte弹道数据写反射内存卡；（2）反射内存卡中断读写标准工程关键字:反射内存卡；弹道数据；520Bytes；中断；视景仿真；写反射内存卡；
+3-20151113:增加了Directory>RFCard_Operate_ReadMissile>RFCard_Operate_ReadMissile.sln>（1）520Byte弹道数据读反射内存卡；（2）反射内存卡中断读写标准工程关键字:反射内存卡；弹道数据；520Bytes；中断；视景仿真；读反射内存卡；
+
+4-20160126:增加了Directory>simple_tab_control_2007>TabExample.sln>MFC的Tab Control控件添加子控件的工程代码关键字:MFC;Tab Control;
+5-20160202:增加了Directory>cybulk>BulkLoop.vcxproj>测试文件夹的复制;关键字:测试;

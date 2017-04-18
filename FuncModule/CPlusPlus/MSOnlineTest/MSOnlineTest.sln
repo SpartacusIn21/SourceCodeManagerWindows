@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MSOnlineTest", "MSOnlineTest\MSOnlineTest.vcxproj", "{58D840C0-9B85-4E9A-9F8D-7EAD3706D9F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58D840C0-9B85-4E9A-9F8D-7EAD3706D9F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{58D840C0-9B85-4E9A-9F8D-7EAD3706D9F4}.Debug|Win32.Build.0 = Debug|Win32
+		{58D840C0-9B85-4E9A-9F8D-7EAD3706D9F4}.Release|Win32.ActiveCfg = Release|Win32
+		{58D840C0-9B85-4E9A-9F8D-7EAD3706D9F4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
