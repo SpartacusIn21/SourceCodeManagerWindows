@@ -176,9 +176,9 @@ def copytree(src, dst,object, symlinks=False, ignore=None):
         shutil.copytree(src, dst)
     else:
         shutil.copy2(src, dst)
-    object.wm_attributes("-topmost", 0)
+    # object.wm_attributes("-topmost", 0)
     showinfo("Success","\'"+  src +"\'"+" directory was copied")
-    object.wm_attributes("-topmost", 1)
+    # object.wm_attributes("-topmost", 1)
     # dst += "/" + Dir_Name
     # if not os.path.exists(dst):
     #     os.makedirs(dst)
