@@ -1,4 +1,5 @@
 __author__ = 'JD'
+import threading
 from PathPack.Path import *
 from tkinter import * #when use realted module, we need to import the realted package
 from tkinter.messagebox import *
@@ -6,6 +7,7 @@ from datetime import *
 import shutil #delete directory recursively related
 import shutil, errno
 import PathPack.Path.__init__
+
 #Add, Delete, Modify and Query the txt file under FuncModule directory and Project directory
 ###################################### Manage Directory #########################################
     #Add
@@ -167,20 +169,27 @@ def CntStarCharinLine(line):
     return count
 ##################################### Manage Record ##########################################
 #Add Button
-def copytree(src, dst, symlinks=False, ignore=None):
+def copytree(src, dst,object, symlinks=False, ignore=None):
     # Dir_Name = src.split('/')
     # Dir_Name = Dir_Name[-1]
+    if os.path.isdir(src):
+        shutil.copytree(src, dst)
+    else:
+        shutil.copy2(src, dst)
+    object.wm_attributes("-topmost", 0)
+    showinfo("Success","\'"+  src +"\'"+" directory was copied")
+    object.wm_attributes("-topmost", 1)
     # dst += "/" + Dir_Name
-    if not os.path.exists(dst):
-        os.makedirs(dst)
-    for item in os.listdir(src):
-        s = os.path.join(src, item)
-        d = os.path.join(dst, item)
-        if os.path.isdir(s):#目录
-            copytree(s, d, symlinks, ignore)
-        else:#文件
-            if (not os.path.exists(d)) or (os.stat(s).st_mtime - os.stat(d).st_mtime > 1):
-                shutil.copy2(s, d)
+    # if not os.path.exists(dst):
+    #     os.makedirs(dst)
+    # for item in os.listdir(src):
+    #     s = os.path.join(src, item)
+    #     d = os.path.join(dst, item)
+    #     if os.path.isdir(s):#目录
+    #         copytree(s, d, symlinks, ignore)
+    #     else:#文件
+    #         if (not os.path.exists(d)) or (os.stat(s).st_mtime - os.stat(d).st_mtime > 1):
+    #             shutil.copy2(s, d)
 def ManageRecord_Add_RenewRecordtxt(Code_Type, Type_Dir,Code_Type_Dir, Description, Keywords,DirPath, FilePath):
     CodeType_RecordPath = Code_Type_Dir + "/Record.txt"
     # RecordFileName = ""#used to store as file name in Record.txt
@@ -299,12 +308,16 @@ def ManageRecord_Add(object,Type, Code_Type, Description, Keywords, DirPath, Fil
         temp_Dir_Name = DirPath.split('/')
         temp_Dir_Name = temp_Dir_Name[-1]
         temp_Code_Type_Dir = Code_Type_Dir + "/" + temp_Dir_Name
-        if not os.path.exists(temp_Code_Type_Dir):
-            os.makedirs(temp_Code_Type_Dir)
-        copytree(DirPath, temp_Code_Type_Dir)#文件夹拷贝
-        object.wm_attributes("-topmost", 0)
-        showinfo("Success","\'"+  DirPath +"\'"+" directory was copied")
-        object.wm_attributes("-topmost", 1)
+        # if not os.path.exists(temp_Code_Type_Dir):
+        #     os.makedirs(temp_Code_Type_Dir)
+        t = threading.Thread(target=copytree, args=(DirPath, temp_Code_Type_Dir,object))
+        t.start()
+        showinfo("Info","Copying...")
+        # t.join()
+        # copytree(DirPath, temp_Code_Type_Dir)#文件夹拷贝
+        #object.wm_attributes("-topmost", 0)
+        # showinfo("Success","\'"+  DirPath +"\'"+" directory was copied")
+        # object.wm_attributes("-topmost", 1)
     elif ~os.path.exists(DirPath) and os.path.exists(FilePath):
         shutil.copy2(FilePath, Code_Type_Dir)
         object.wm_attributes("-topmost", 0)
