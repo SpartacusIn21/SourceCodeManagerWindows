@@ -10,6 +10,11 @@ Description: (1)Can based on document ReadMe.txt record, according to the keywor
 '''
 __author__ = 'JD'
 #Main Function
+# import sys 
+# sys.path.append("..\\FuncPack\\txtManage")
+# sys.path.append("..\\PathPack\\Path")
+# sys.path.append("..\\\Main_UI")
+
 from Main_UI import *
 from tkinter import *
 from PathPack.Path import *
