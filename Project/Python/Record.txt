@@ -13,3 +13,4 @@ Project-Python总纲领
 
 
 2-20180305:增加了Directory>DeepInsight>que.png>DeepInsight算法编程题关键字:图；计算点对中最小的距离；寻找两点间是否存在路径
+3-20180306:增加了Directory>monitor_process>monitor_process_py3.py>监控进程并修改配置文件和打开日志文件关键字:进程监控;配置文件修改;日志文件修改;
