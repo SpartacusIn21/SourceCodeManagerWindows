@@ -37,3 +37,4 @@ FuncModule-CPlusPlus总纲领
 24-20151026:增加了File>Valid_Anagram.cpp>Given two strings s and t, write a function to determine if t is an anagram of s;判断一个字符串是不是另一个字符串的有效回文序列;关键字:Valid Anagram;回文序列;leecode;leetcode.com/problems/valid-anagram/;
 25-20151030:增加了File>cs2ca.cpp>CString转换为char类型的函数;关键字:CString;char;
 26-20180308:增加了Directory>BinarySearch>main.cpp>二叉查找树关键字:二叉查找；gcc；makefile；make
+27-20180308:增加了File>ReverseLinkedList.cpp>反转链表关键字:反转链表；链表
