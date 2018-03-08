@@ -47,6 +47,8 @@ FuncModule总纲领-20150810于Philips上海科技创新园区2号楼4楼
 25-20151030:增加了File>cs2ca.cpp>CString转换为char类型的函数;关键字:CString;char;
 
 
+26-20180308:增加了Directory>BinarySearch>main.cpp>二叉查找树关键字:二叉查找；gcc；makefile；make
+
 ****************************************CSharp****************************************************
 
 
