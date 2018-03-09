@@ -38,3 +38,4 @@ FuncModule-CPlusPlus总纲领
 25-20151030:增加了File>cs2ca.cpp>CString转换为char类型的函数;关键字:CString;char;
 26-20180308:增加了Directory>BinarySearch>main.cpp>二叉查找树关键字:二叉查找；gcc；makefile；make
 27-20180308:增加了File>ReverseLinkedList.cpp>反转链表关键字:反转链表；链表
+28-20180309:增加了File>ELFhash.cpp>著名ELF hash算法关键字:EFL hash;hash字符串；哈希
