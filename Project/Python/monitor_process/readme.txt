@@ -1,0 +1,1 @@
+监控QXClient.exe进程，在进程被启动后自动将qixiu.ini中日志等级log_level修改为2。
