@@ -40,3 +40,4 @@ FuncModule-CPlusPlus总纲领
 27-20180308:增加了File>ReverseLinkedList.cpp>反转链表关键字:反转链表；链表
 28-20180309:增加了File>ELFhash.cpp>著名ELF hash算法关键字:EFL hash;hash字符串；哈希
 29-20180309:增加了File>JewelsAndStones.cpp>字符统计关键字:hash；字符统计
+30-20180310:增加了File>MergeBinaryTrees.cpp>合并二叉树关键字:二叉树；合并
