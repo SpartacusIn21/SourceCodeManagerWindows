@@ -42,3 +42,13 @@ FuncModule-CPlusPlus总纲领
 29-20180309:增加了File>JewelsAndStones.cpp>字符统计关键字:hash；字符统计
 30-20180310:增加了File>MergeBinaryTrees.cpp>合并二叉树关键字:二叉树；合并
 31-20180312:增加了Directory>ThreadPool>MyThreadPool.cpp>线程池关键字:线程池；threadpool
+32-20180312:增加了File>Interview.cpp>1. 字符串
+2. 链表
+3. 树
+4. 图
+5. 排序
+6. 递归 vs. 迭代
+7. 动态规划
+8. 位操作
+9. 概率问题
+10. 排列组合关键字:面试常见问题
