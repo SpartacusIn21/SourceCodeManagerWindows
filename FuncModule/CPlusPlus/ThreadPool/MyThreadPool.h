@@ -39,9 +39,9 @@ private:
 	int m_nThreadNum;
 	bool m_bIsExit;
 	
-	CMyStack m_IdleThreadStack;
-	CMyList m_ActiveThreadList;
-	CMyQueue m_TaskQueue;
+	CMyStack m_IdleThreadStack;//Stack是后进先出的结构，Idel线程无所谓哪一个，方便拿出就可
+	CMyList m_ActiveThreadList;//List是方便删除的结构，Active线程是同时运行的，并不知哪个线程先运行结束，所以要方便移除，用List最合适了
+	CMyQueue m_TaskQueue;//queue和deque是顺序结构，先进先出，如果任务优先级都相同的，就使用queue，如果有两种优先级，就使用deque，如果有若干优先级，就使用multimap
 };
 template class Singleton<CMyThreadPool>;
 #define THREADPOOL_MGR Singleton<CMyThreadPool>::GetInstance()

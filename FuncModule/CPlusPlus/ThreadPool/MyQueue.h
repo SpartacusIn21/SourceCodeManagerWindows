@@ -15,7 +15,7 @@ public:
 	bool isEmpty();
 	bool clear();
 private:
-	std::deque<CTask*>m_TaskQueue;
+	std::deque<CTask*>m_TaskQueue;//之所以使用deque，是为了方便高优先级任务查到队首
 	CMyMutex m_mutex;
 };
 
