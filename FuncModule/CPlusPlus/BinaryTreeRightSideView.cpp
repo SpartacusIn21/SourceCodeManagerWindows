@@ -33,10 +33,12 @@ You should return [1, 3, 4].
  */
 class Solution {
 public:
+	//两种方法思想类似，只是实现稍微不同
+	//方法1
     vector<int> rightSideView(TreeNode* root) {//BFS算法，层次遍历
-        if(!root)return ret;
-		queue<TreeNode*>mQ;//新建队列
-        vector<int> ret;//用来存储输出结果        
+        vector<int> ret;//用来存储输出结果   
+		if(!root)return ret;
+		queue<TreeNode*>mQ;//新建队列            
         mQ.push(root);//入队列
         while(!mQ.empty()){//当队列不为空时
             ret.push_back(mQ.back()->val);//将队列中最后一个元素push_back到vector中，因为最后一个节点是始终是该层中从右边能看到的那个元素，这是由后面的遍历决定的
@@ -49,4 +51,32 @@ public:
         }
         return ret;
     }
+	//方法2(参考PrintNodeByLevel)
+	vector<int> rightSideView(TreeNode* root)
+	{
+		vector<int> ret;//用来存储输出结果
+		if(root == NULL)
+			return ret;
+		vector<TreeNode*> vec;
+		vec.push_back(root);
+		int cur = 0;
+		int last = 1;
+		while(cur < vec.size())//整个BT的Level层循环
+		{
+			last = vec.size();
+			while(cur < last)//当前Level层的各个节点循环
+			{
+				cout << vec[cur]->val << " ";
+				if(vec[cur]->left)
+					vec.push_back(vec[cur]->left);
+				if(vec[cur]->right)
+					vec.push_back(vec[cur]->right);
+				cur++;
+
+			}
+			ret.push_back(vec[cur-1]->val);
+			cout << endl;//输出一行后换行
+		}
+		return ret;
+	}
 };

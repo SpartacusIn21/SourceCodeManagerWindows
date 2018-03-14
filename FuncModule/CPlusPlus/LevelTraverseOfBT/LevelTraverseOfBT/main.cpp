@@ -27,7 +27,7 @@ int PrintNodeAtLevel(Node *root, int level)
 	{
 		return 0;
 	}
-	else if(level == 0 )
+	else if(level == 0 )//输出该层的节点信息
 	{
 		cout << root->data << " ";
 		return 1;
@@ -59,11 +59,10 @@ void PrintNodeByLevel(Node* root)
 			cur++;
 
 		}
-		cout << endl;
+		cout << endl;//输出一行后换行
 	}
-
-
 }
+
 void PrintByReverseLevel(Node *root)//从下往上访问二叉树，待消化
 {
 	vector<Node *> q;
