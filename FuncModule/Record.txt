@@ -62,6 +62,8 @@ FuncModule总纲领-20150810于Philips上海科技创新园区2号楼4楼
 32-20180312:增加了File>Interview.cpp>1. 字符串2. 链表3. 树4. 图5. 排序6. 递归 vs. 迭代7. 动态规划8. 位操作9. 概率问题10. 排列组合关键字:面试常见问题
 33-20180325:增加了File>AddTwoNumbers.cpp>Add Two Numbers;leetcode;链表;关键字:list;链表;相加;
 34-20180325:增加了File>SumofTwoIntegers.cpp>Sum of Two Intergers;leetcode;两个数字相加不使用加减号;关键字:加法;二进制;移位运算;
+35-20180326:增加了File>algorithm_1.cpp>田忌赛马;关键字:排序;比较大小;
+
 
 
 
