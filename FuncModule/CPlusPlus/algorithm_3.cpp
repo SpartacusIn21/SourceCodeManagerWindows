@@ -23,33 +23,40 @@ const vector<float> wechat_redpacket(const float& money, const int&num){
 	//产生1-100的随机数,最小抢到的是0.01元
 	int num_cnt = num;
 	while(num_cnt--){
-		money_arr.push_back(rand()%1000 + 1);
+		money_arr.push_back(rand()%100 + 1);
 	}
 	//统计num个随机数的和
 	int sum = accumulate(money_arr.begin(), money_arr.end());
 	//将每个随机数占和的比例乘以红包额度就是抢到的红包，最后一个红包为剩余的额度
-	float used_money = 0;
+	float used_money = 0.0;
 	for(vector<float>::iterator item=money_arr.begin(); item!=money_arr.end();item++){
 		if(item != money_arr.end()-1){
 			*item = money * (*item * 1.0/sum);
+			//精确到2位小数
+			*item  = (int)(*item * 100) * 1.0 / 100;
 			used_money += *item;
 		}
 		else{
+			cout << "money:" << money << endl;
+			cout << "used_money:" << used_money << endl;
+			cout << "left_money:" << money - used_money << endl;
 			*item = money - used_money;
 		}
 	}
 	return money_arr;	
 }
 int main(){
-	int money,num;
+	float money;
+	int num;
 	cout << "Please input money:" << endl;
 	cin >> money;
 	cout << "Please input num:" << endl;
 	cin >> num;
 	const vector<float> readpacket_list = wechat_redpacket(money,num);
 	cout << "wechat red packet result list:" << endl;
+	int i = 0;
 	for(auto &item:readpacket_list ){
-		cout << item << " ";
+		cout << i++ << " " << item << " ";
 		cout << endl;
 	}
 	
