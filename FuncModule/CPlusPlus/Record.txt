@@ -57,6 +57,8 @@ FuncModule-CPlusPlus总纲领
 35-20180326:增加了File>algorithm_1.cpp>田忌赛马;关键字:排序;比较大小;
 36-20180327:增加了File>algorithm_2.cpp>判断屏幕上的二叉树是否有交叉;关键字:二叉树;层次遍历;
 37-20180327:增加了File>algorithm_3.cpp>红包算法;关键字:红包;随机;
+38-20180327:增加了File> SumofTwoIntegers.cpp>整数分解;关键字:leetcode;整数分解;
+
 
 
 
