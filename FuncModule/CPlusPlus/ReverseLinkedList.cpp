@@ -28,13 +28,13 @@ ListNode *ReverseLinkedList(ListNode* head){
         head->next = NULL;
 	//遍历并将链表翻转
         while(p->next != NULL){
-	    p = p->next;
+			p = p->next;
             q-> next = head;
             head = q;
             q = p;
         }
         q->next = head;
-	//避免两个节点的时候自己指向自己
+	//两个节点的时候避免自己指向自己
         if(p != q){
             p->next = q;
         }
