@@ -43,7 +43,7 @@ rotate the input matrix in-place such that it becomes:
 @date:3/27/2018
 @pudong,shanghai
 */
-//Solution 1
+//Solution 1(遍历数据每一列，并将数据反转作为新的矩阵的一列)
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
@@ -60,4 +60,18 @@ public:
     }
 };
 
-//Solution 2(遍历矩阵将aij的元素交换到aj(n-1-i),应避免重复遍历相同位置)
+//Solution 2(遍历矩阵将aij的元素交换到aj(n-1-i))
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) {
+        vector<vector<int>> tmp=matrix;
+        int matrix_size = matrix.size();
+        for(int i = 0; i < matrix_size; i++){
+            for(int j = 0; j < matrix_size;j++){
+                tmp[j][matrix_size-1-i] = matrix[i][j];
+            }
+            
+        }
+       matrix=tmp; 
+    }
+};
