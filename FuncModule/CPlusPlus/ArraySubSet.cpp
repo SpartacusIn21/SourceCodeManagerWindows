@@ -20,8 +20,10 @@ void print_subset(int n,int *b,int cur)  //确定第cur位选或者不选
     else
     {
         b[cur]=1;  //这一位选 
+	printf("cur:%d-1\n",cur);
         print_subset(n,b,cur+1);  //递归下一位 
         b[cur]=0;  //这一位不选 
+	printf("cur:%d-0\n",cur);
         print_subset(n,b,cur+1);  //递归下一位 
     }
 }
