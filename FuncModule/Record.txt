@@ -70,6 +70,7 @@ FuncModule总纲领-20150810于Philips上海科技创新园区2号楼4楼
 40-20180329:增加了File> TopK.cpp>给定一个无序数组，找到第K个最大的数或者前K个最大的数;关键字:leetcode;TopK;Top K;
 41-20180329:增加了File> ArraySubset.cpp>寻找给定数组的所有子集合;关键字:leetcode;数组;子集;
 42-20180330:增加了File> ByteDance_Interview1.cpp>合并多个有序数组合;关键字:面试题;数组;合并数组;归并;
+43-20180331:增加了File> LargestNumber.cpp>将多个整数合并成最大的整数;关键字:整数组合;最大数;leetcode;
 
 
 
