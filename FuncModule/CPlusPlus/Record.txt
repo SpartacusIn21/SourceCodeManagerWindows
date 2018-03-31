@@ -63,6 +63,7 @@ FuncModule-CPlusPlus总纲领
 41-20180329:增加了File> ArraySubset.cpp>寻找给定数组的所有子集合;关键字:leetcode;数组;子集;
 42-20180330:增加了File> ByteDance_Interview1.cpp>合并多个有序数组合;关键字:面试题;数组;合并数组;归并;
 43-20180331:增加了File> LargestNumber.cpp>将多个整数合并成最大的整数;关键字:整数组合;最大数;leetcode;
+44-20180331:增加了File> findDisappearedNumbers.cpp>寻找有序数组中缺失的数字;关键字:缺失数字;leetcode;
 
 
 
